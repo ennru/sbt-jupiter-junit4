@@ -8,18 +8,18 @@ import org.junit.*;
 public class Junit4Test {
 
     @BeforeClass
-    static void before() {
+    public static void before() {
         System.out.println("before class");
     }
 
     @Test
-    void myFirstTest() {
+    public void myFirstTest() {
         assertEquals(3, 1 + 1);
         throw new RuntimeException("Junit4");
     }
 
     @Test
-    void myNextTest() {
+    public void myNextTest() {
         assertEquals(2, 1 + 1);
     }
 
